@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,14 +16,19 @@
             </form>
         </header>
         <main>
-            <section id="current-weather">
-                <h2>Current Weather</h2>
-                <div id="weather-info"></div>
-            </section>
-            <section id="forecast">
-                <h2>5-Day Forecast</h2>
-                <div id="forecast-info"></div>
-            </section>
+            <fieldset>
+                <legend><h2>Current Weather</h2></legend>
+                <section id="current-weather">
+                    <div id="weather-info"></div>
+                </section>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend><h2>5-Day Forecast</h2></legend>
+                <section id="forecast">
+                    <div id="forecast-info"></div>
+                </section>
+            </fieldset>
         </main>
     </div>
     <script src="main.js"></script>
