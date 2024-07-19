@@ -3,14 +3,17 @@ body {
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 .container {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 1200px;
     text-align: center;
@@ -18,20 +21,16 @@ body {
 
 header {
     margin-bottom: 20px;
-    border-bottom: 1px solid #ccc; /* Horizontal line under header */
-    padding-bottom: 10px;
 }
 
 header h1 {
     margin: 0;
-    padding: 10px 0;
 }
 
 form {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
 }
 
 input[type="text"] {
@@ -57,8 +56,6 @@ button:hover {
 
 section {
     margin-top: 20px;
-    padding: 20px 0;
-    border-bottom: 1px solid #ccc; /* Horizontal line*/
 }
 
 section h2 {
@@ -67,4 +64,28 @@ section h2 {
 
 #weather-info, #forecast-info {
     text-align: left;
+}
+
+#forecast-info {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fafafa;
+}
+
+.forecast-section {
+    flex: 0 0 auto;
+    width: 200px;
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-section:last-child {
+    margin-right: 0;
 }
