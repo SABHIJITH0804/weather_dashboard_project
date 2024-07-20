@@ -82,3 +82,4 @@ document.getElementById('search-form').addEventListener('submit', function(event
     getWeatherData(city);
 });
 
+
